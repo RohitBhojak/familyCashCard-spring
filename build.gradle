@@ -20,6 +20,7 @@ repositories {
 dependencies {
     // This is the correct web starter for Spring Boot 3
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
 
     // In Boot 3, this starter automatically includes TestRestTemplate
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
