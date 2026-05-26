@@ -35,6 +35,8 @@ class SecurityConfig {
                 .build();
         UserDetails rahul = users.username("rahul").password(passwordEncoder.encode("def123")).roles("NON-OWNER")
                 .build();
-        return new InMemoryUserDetailsManager(rohit, rahul);
+        UserDetails abhay = users.username("abhay").password(passwordEncoder.encode("ghi123")).roles("CARD-OWNER")
+                .build();
+        return new InMemoryUserDetailsManager(rohit, rahul, abhay);
     }
 }
